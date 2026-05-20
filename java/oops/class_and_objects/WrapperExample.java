@@ -65,6 +65,14 @@ public class WrapperExample {
         // final object
 
         final WrapperExample obj = new WrapperExample("Alice"); // we cannot change the reference of obj because it is final
+
+
+        System.out.println(obj); // this will print ClassName@hash
+
+
+
+
+
         System.out.println(obj.name); // we can change the properties of the object but we cannot change the reference of the object
         obj.name = "Bob"; // this is allowed because we are changing the property of the object, not the reference of the object
         System.out.println(obj.name);
