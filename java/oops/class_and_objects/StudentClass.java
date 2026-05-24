@@ -51,7 +51,10 @@ class StudentClass {
    kunal.greet(); //print Hello Kunal
 
     // 2nd option to assign values to the properties of the object using constructor
-    StudentClass rahul = new StudentClass(2, "Rahul", 85); //binds these arguments to the object
+    // StudentClass rahul = new StudentClass(2, "Rahul", 85); //binds these arguments to the object
+    StudentClass rahul = kunal;
+    System.out.println(rahul == kunal);
+    System.err.println(kunal);
 
     System.out.println(rahul.rollNo);
     System.out.println(rahul.name);
